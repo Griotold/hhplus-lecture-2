@@ -2,6 +2,7 @@ package org.hhplus.lecture.domain.entity
 
 import jakarta.persistence.*
 import org.hhplus.lecture.domain.constant.ApplyStatus
+import java.time.LocalDateTime
 
 @Entity
 class Apply(
@@ -27,4 +28,6 @@ class Apply(
     @Enumerated(EnumType.STRING)
     var applyStatus: ApplyStatus = ApplyStatus.valueOf(applyStatus)
         protected set
+
+    var applyAt: LocalDateTime = LocalDateTime.now()
 }
