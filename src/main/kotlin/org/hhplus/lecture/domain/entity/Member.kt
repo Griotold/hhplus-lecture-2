@@ -1,4 +1,4 @@
-package org.hhplus.lecture.domain
+package org.hhplus.lecture.domain.entity
 
 import jakarta.persistence.Entity
 import jakarta.persistence.GeneratedValue
@@ -6,7 +6,7 @@ import jakarta.persistence.GenerationType
 import jakarta.persistence.Id
 
 @Entity
-class Member (
+class Member(
     name: String
 ) {
     @Id
