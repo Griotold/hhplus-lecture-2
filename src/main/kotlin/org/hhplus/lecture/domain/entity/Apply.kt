@@ -30,4 +30,5 @@ class Apply(
         protected set
 
     var applyAt: LocalDateTime = LocalDateTime.now()
+        protected set
 }
