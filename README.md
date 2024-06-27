@@ -2,4 +2,4 @@
 
 ## ERD
 
-![특강서비스_ERD_2024-06-26 115353](https://github.com/Griotold/bankshop-griotold/assets/101307758/d454b58c-6601-4fca-ad5f-dd5d38638853)
+![특강서비스_ERD_2_2024-06-27 101515](https://github.com/Griotold/hhplus-lecture-2/assets/101307758/f04fd07a-ce96-4c8d-b5cb-a79aaa1089c4)
