@@ -8,7 +8,7 @@ import java.time.LocalDateTime
 class Apply(
     member: Member,
     lecture: Lecture,
-    applyStatus: String,
+    applyStatus: ApplyStatus,
 ) {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -26,7 +26,7 @@ class Apply(
 
     // 문자열로 받아서 enum으로 변환
     @Enumerated(EnumType.STRING)
-    var applyStatus: ApplyStatus = ApplyStatus.valueOf(applyStatus)
+    var applyStatus: ApplyStatus = applyStatus
         protected set
 
     var applyAt: LocalDateTime = LocalDateTime.now()

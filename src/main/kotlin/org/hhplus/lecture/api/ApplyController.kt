@@ -2,6 +2,7 @@ package org.hhplus.lecture.api
 
 import org.hhplus.lecture.application.request.ApplyRequest
 import org.hhplus.lecture.application.response.ApplyResponse
+import org.hhplus.lecture.application.service.ApplyService
 import org.slf4j.Logger
 import org.slf4j.LoggerFactory
 import org.springframework.web.bind.annotation.PostMapping
@@ -11,17 +12,15 @@ import org.springframework.web.bind.annotation.RestController
 
 @RestController
 @RequestMapping("/lectures")
-class ApplyController {
+class ApplyController(
+    private val applyService: ApplyService
+) {
     private val logger: Logger = LoggerFactory.getLogger(javaClass)
 
     @PostMapping("/apply")
     fun apply(
-    @RequestBody dto: ApplyRequest,
+        @RequestBody dto: ApplyRequest,
     ): ApplyResponse {
-        return ApplyResponse(
-            memberId = 1L,
-            lectureId = 1L,
-            applyStatus = "SUCCESS",
-        )
+        return applyService.apply(dto)
     }
 }
