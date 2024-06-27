@@ -1,4 +1,4 @@
-package org.hhplus.lecture.infra.persistence
+package org.hhplus.lecture.infra.persistence.impl
 
 import org.hhplus.lecture.infra.persistence.entity.Lecture
 import org.hhplus.lecture.domain.repository.LectureRepository

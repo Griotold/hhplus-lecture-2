@@ -1,8 +1,8 @@
 package org.hhplus.lecture.domain.repository
 
-import org.hhplus.lecture.infra.persistence.entity.Apply
+import org.hhplus.lecture.domain.ApplyDomain
 
 interface ApplyRepository {
-    fun save(apply: Apply): Apply
-    fun findById(id: Long): Apply?
+    fun save(applyDomain: ApplyDomain): ApplyDomain
+    fun findById(id: Long): ApplyDomain?
 }

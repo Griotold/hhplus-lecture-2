@@ -1,4 +1,4 @@
-package org.hhplus.lecture.infra.persistence
+package org.hhplus.lecture.infra.persistence.impl
 
 import org.hhplus.lecture.domain.repository.ScheduleRepository
 import org.hhplus.lecture.infra.persistence.entity.Schedule
