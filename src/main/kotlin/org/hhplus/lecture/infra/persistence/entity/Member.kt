@@ -1,4 +1,4 @@
-package org.hhplus.lecture.domain.entity
+package org.hhplus.lecture.infra.persistence.entity
 
 import jakarta.persistence.Entity
 import jakarta.persistence.GeneratedValue
