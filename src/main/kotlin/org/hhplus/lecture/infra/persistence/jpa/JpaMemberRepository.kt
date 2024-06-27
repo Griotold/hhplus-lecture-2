@@ -1,6 +1,6 @@
-package org.hhplus.lecture.domain.repository.jpa
+package org.hhplus.lecture.infra.persistence.jpa
 
-import org.hhplus.lecture.domain.entity.Member
+import org.hhplus.lecture.infra.persistence.entity.Member
 import org.springframework.data.jpa.repository.JpaRepository
 
 interface JpaMemberRepository : JpaRepository<Member, Long> {

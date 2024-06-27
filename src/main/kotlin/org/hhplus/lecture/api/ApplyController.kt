@@ -20,7 +20,7 @@ class ApplyController(
     @PostMapping("/apply")
     fun apply(
         @RequestBody dto: ApplyRequest,
-    ): ApplyResponse {
+    ): ApplyResponse? {
         return applyService.apply(dto)
     }
 }

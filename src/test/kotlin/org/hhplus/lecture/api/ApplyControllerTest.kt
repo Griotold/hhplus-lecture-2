@@ -4,12 +4,11 @@ import com.fasterxml.jackson.databind.ObjectMapper
 import jakarta.persistence.EntityManager
 import org.assertj.core.api.Assertions.*
 import org.hhplus.lecture.application.request.ApplyRequest
-import org.hhplus.lecture.domain.entity.Lecture
-import org.hhplus.lecture.domain.entity.Member
-import org.hhplus.lecture.domain.repository.jpa.JpaLectureRepository
-import org.hhplus.lecture.domain.repository.jpa.JpaMemberRepository
+import org.hhplus.lecture.infra.persistence.entity.Lecture
+import org.hhplus.lecture.infra.persistence.entity.Member
+import org.hhplus.lecture.infra.persistence.jpa.JpaLectureRepository
+import org.hhplus.lecture.infra.persistence.jpa.JpaMemberRepository
 import org.json.JSONObject
-import org.junit.jupiter.api.Assertions.*
 import org.junit.jupiter.api.BeforeEach
 import org.junit.jupiter.api.Test
 import org.springframework.beans.factory.annotation.Autowired

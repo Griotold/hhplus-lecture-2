@@ -1,8 +1,8 @@
-package org.hhplus.lecture.domain.repository.impl
+package org.hhplus.lecture.infra.persistence
 
-import org.hhplus.lecture.domain.entity.Member
+import org.hhplus.lecture.infra.persistence.entity.Member
 import org.hhplus.lecture.domain.repository.MemberRepository
-import org.hhplus.lecture.domain.repository.jpa.JpaMemberRepository
+import org.hhplus.lecture.infra.persistence.jpa.JpaMemberRepository
 import org.springframework.data.repository.findByIdOrNull
 import org.springframework.stereotype.Repository
 

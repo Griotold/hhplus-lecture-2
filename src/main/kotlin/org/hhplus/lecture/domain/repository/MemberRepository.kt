@@ -1,6 +1,6 @@
 package org.hhplus.lecture.domain.repository
 
-import org.hhplus.lecture.domain.entity.Member
+import org.hhplus.lecture.infra.persistence.entity.Member
 
 interface MemberRepository {
     fun save(member: Member): Member
