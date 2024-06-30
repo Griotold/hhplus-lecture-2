@@ -1,4 +1,7 @@
 spring:
+  output:
+    ansi:
+      enabled: always
   jpa:
     database: h2
     open-in-view: false
@@ -18,3 +21,8 @@ spring:
     console:
       enabled: true
       path: /h2-console
+
+logging:
+  level:
+    org.hibernate:SQL: debug
+    org.hibernate.orm.jdbc.bind: debug
