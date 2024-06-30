@@ -5,9 +5,8 @@ import java.time.LocalDateTime
 
 data class ApplyDomain(
     val id: Long,
-    val memberDomain: MemberDomain,
-    val scheduleDomain: ScheduleDomain,
+    val memberId: Long,
+    val scheduleId: Long,
     val applyStatus: ApplyStatus,
     val applyAt: LocalDateTime,
-) {
-}
+)

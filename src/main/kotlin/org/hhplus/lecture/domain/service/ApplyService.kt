@@ -1,4 +1,4 @@
-package org.hhplus.lecture.application.service
+package org.hhplus.lecture.domain.service
 
 import org.hhplus.lecture.application.request.ApplyRequest
 import org.hhplus.lecture.application.response.ApplyResponse

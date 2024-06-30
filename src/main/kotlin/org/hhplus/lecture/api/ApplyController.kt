@@ -2,7 +2,7 @@ package org.hhplus.lecture.api
 
 import org.hhplus.lecture.application.request.ApplyRequest
 import org.hhplus.lecture.application.response.ApplyResponse
-import org.hhplus.lecture.application.service.ApplyService
+import org.hhplus.lecture.domain.service.ApplyService
 import org.slf4j.Logger
 import org.slf4j.LoggerFactory
 import org.springframework.web.bind.annotation.PostMapping
