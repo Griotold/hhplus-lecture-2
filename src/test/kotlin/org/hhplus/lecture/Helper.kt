@@ -6,9 +6,9 @@ import org.hhplus.lecture.domain.LectureSession
 import java.time.LocalDateTime
 
 object Helper {
-    private fun makeDateTimeRangeAs5Days(from: LocalDateTime) = DateTimeRange(from, from.plusDays(5))
+    fun makeDateTimeRangeAs5Days(from: LocalDateTime) = DateTimeRange(from, from.plusDays(5))
 
-    private fun makeDateTimeRangeAs1Hour(from: LocalDateTime) = DateTimeRange(from, from.plusHours(1))
+    fun makeDateTimeRangeAs1Hour(from: LocalDateTime) = DateTimeRange(from, from.plusHours(1))
 
     fun createLecture(
         id: Long = 1L
