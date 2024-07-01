@@ -13,13 +13,10 @@ class LectureSessionRepositoryImpl(
     override fun findOneById(id: Long): LectureSession? =
         jpaRepository.findById(id).map { it.toLectureSession() }.orElse(null)
 
-    override fun save(lectureSession: LectureSession): LectureSession {
-        TODO("Not yet implemented")
-    }
+    override fun save(lectureSession: LectureSession): LectureSession =
+        jpaRepository.save(lectureSession.toEntity()).toLectureSession()
 
-    override fun deleteAll() {
-        TODO("Not yet implemented")
-    }
+    override fun deleteAll() = jpaRepository.deleteAll()
 }
 
 fun LectureSessionEntity.toLectureSession(): LectureSession {
