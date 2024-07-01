@@ -1,4 +1,4 @@
 package org.hhplus.lecture.controller.dto
 
-class Requests {
+data class ApplicationRequest(val studentId: Long) {
 }
